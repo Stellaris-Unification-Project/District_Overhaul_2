@@ -36,8 +36,9 @@ pilot = {
 		is_being_assimilated = no
 	}
 
+	possible_precalc = can_fill_worker_job
+
 	possible = {
-		worker_job_check_trigger = yes
 		owner = { is_gestalt = no }
 	}
 	
@@ -285,9 +286,10 @@ pilot_drone = {
 		is_being_assimilated = no
 	}
 
+	possible_precalc = can_fill_drone_job
+
 	possible = {
-		drone_job_check_trigger = yes
-	}
+		}
 	
 	resources = {
 		category = planet_jobs
@@ -345,7 +347,7 @@ pilot_drone = {
 		}
 		modifier = {
 			factor = 0
-			planet = { count_pops = { limit = { } count < 12 } }
+			planet = { count_owned_pop = { limit = { } count < 12 } }
 			owner = { is_ai = yes }
 		}
 	}
@@ -363,9 +365,10 @@ officer_drone = {
 		is_being_assimilated = no
 	}
 
+	possible_precalc = can_fill_drone_job
+
 	possible = {
-		drone_job_check_trigger = yes
-	}
+		}
 	
 	resources = {
 		category = planet_jobs

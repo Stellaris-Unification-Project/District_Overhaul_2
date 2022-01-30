@@ -10,9 +10,9 @@ farm_worker = {
 		is_being_assimilated = no
 	}
 
+	possible_precalc = can_fill_worker_job
 	possible = {
 		hidden_trigger = { exists = owner }
-		worker_job_check_trigger = yes
 		owner = {
 			is_gestalt = no
 			is_fallen_empire_spiritualist = no
@@ -203,9 +203,9 @@ nature_farmer = {
 		is_being_assimilated = no
 	}
 
+	possible_precalc = can_fill_worker_job
 	possible = {
 		hidden_trigger = { exists = owner }
-		worker_job_check_trigger = yes
 		owner = {
 			is_gestalt = no
 			is_fallen_empire_spiritualist = no
@@ -398,9 +398,9 @@ aquatic_farmer = {
 		is_being_assimilated = no
 	}
 
+	possible_precalc = can_fill_worker_job
 	possible = {
 		hidden_trigger = { exists = owner }
-		worker_job_check_trigger = yes
 		owner = {
 			is_gestalt = no
 			is_fallen_empire_spiritualist = no
@@ -966,9 +966,10 @@ agri_drone_technician = {
 		is_being_assimilated = no
 	}
 
+	possible_precalc = can_fill_drone_job
+
 	possible = {
-		drone_job_check_trigger = yes
-	}
+		}
 
 	resources = {
 		category = planet_farmers
@@ -1048,9 +1049,10 @@ aquatic_agri_drone  = {
 		is_being_assimilated = no
 	}
 
+	possible_precalc = can_fill_drone_job
+
 	possible = {
-		drone_job_check_trigger = yes
-	}
+		}
 
 	resources = {
 		category = planet_farmers

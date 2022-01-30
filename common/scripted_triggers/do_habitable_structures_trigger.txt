@@ -1,11 +1,9 @@
 habitable_structure = {
 	OR = {
 		# Vanilla
-		is_planet_class = pc_ringworld_habitable
-		is_planet_class = pc_habitat
+		is_artificial = yes
 		# Gigastructural Engineering
-		is_planet_class = pc_ringworld_habitable
-		is_planet_class = pc_habitat
+		is_artificial = yes
 		is_planet_class = pc_gigaorbital_ring
 		is_planet_class = pc_habitable_gas_giant
 		is_planet_class = pc_interstellar_habitat

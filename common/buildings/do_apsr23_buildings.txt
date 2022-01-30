@@ -45,13 +45,11 @@ apsr23_building_part1 = {
 	potential = {
 		AND = {
 			has_modifier = "apsr23_planet_modifier"
-			NOT = {
-				OR = {
+			NOR = {
 					has_building = apsr23_building_part1_fake
 					has_building = apsr23_building_part2_fake
 					has_building = apsr23_building_part3_fake
-				}
-			}
+}
 		}
 	}
 	

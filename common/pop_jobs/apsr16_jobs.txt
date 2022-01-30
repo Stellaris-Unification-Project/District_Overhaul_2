@@ -105,9 +105,10 @@ apsr16_scientist_hive = {
 	condition_string = DRONE_JOB_TRIGGER
 	building_icon = apsr16_building_part3
 	
+	possible_precalc = can_fill_drone_job
+	
 	possible = {
-		drone_job_check_trigger = yes
-	}
+		}
 
 	resources = {
 		category = apsr16_planet_scientist_hive
@@ -185,9 +186,10 @@ apsr16_scientist_machine = {
 	condition_string = DRONE_JOB_TRIGGER
 	building_icon = apsr16_building_part3
 	
+	possible_precalc = can_fill_drone_job
+	
 	possible = {
-		drone_job_check_trigger = yes
-	}
+		}
 
 	resources = {
 		category = apsr16_planet_scientist_machine

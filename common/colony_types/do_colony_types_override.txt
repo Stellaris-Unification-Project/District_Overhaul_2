@@ -1296,8 +1296,7 @@ col_rural_gestalt = {
 
 	potential = {
 		NOR = {
-			is_planet_class = pc_ringworld_habitable
-			is_planet_class = pc_habitat
+			is_artificial = yes
 			is_planet_class = pc_machine
 			is_planet_class = pc_hive
 		}

@@ -59,13 +59,11 @@ apsr19_building_part_b1 = {
 	potential = {
 		AND = {
 			has_modifier = "apsr19_planet_modifier"
-			NOT = {
-				OR = {
+			NOR = {
 					has_building = apsr19_building_part_b1_fake
 					has_building = apsr19_building_part_b2_fake
 					has_building = apsr19_building_part_b3_fake
-				}
-			}
+}
 		}
 	}
 	
@@ -338,13 +336,11 @@ apsr19_building_part_m1 = {
 	potential = {
 		AND = {
 			has_modifier = "apsr19_planet_modifier"
-			NOT = {
-				OR = {
+			NOR = {
 					has_building = apsr19_building_part_m1_fake
 					has_building = apsr19_building_part_m2_fake
 					has_building = apsr19_building_part_m3_fake
-				}
-			}
+}
 		}
 	}
 	

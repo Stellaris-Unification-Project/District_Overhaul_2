@@ -230,12 +230,9 @@ planet_event = {
 					OR = {
 						can_invest_into_research = no
 						AND = {
-							NOT = {
-								OR = {
+							NOR = {
 									has_planet_flag = do_research_complex
-									has_planet_flag = do_nature_reserve 
-								}
-							}
+									has_planet_flag = do_nature_reserve }
 							bad_consumer_goods_economy = yes
 							country_uses_consumer_goods = yes
 						}

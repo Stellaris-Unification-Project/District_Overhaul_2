@@ -250,7 +250,7 @@ district_mining = {
 		potential = {
 			exists = owner
 			owner = {
-				has_swapped_tradition = tr_prosperity_arcadian_housing_lithoid
+				has_active_tradition = tr_prosperity_arcadian_housing_lithoid
 				is_lithoid_empire = yes
 			}
 		}
@@ -407,13 +407,11 @@ district_mining = {
 		# Wrong Colony Type
 		modifier = {
 			factor = 0.1
-			NOT = {
-				OR = {
+			NOR = {
 					has_designation = col_mining
 					has_designation = col_rural
 					has_designation = col_rural_gestalt
-				}
-			}
+}
 		}
 	}
 	ai_resource_production = {
@@ -669,7 +667,7 @@ district_mining_uncapped = {
 		potential = {
 			exists = owner
 			owner = {
-				has_swapped_tradition = tr_prosperity_arcadian_housing_lithoid
+				has_active_tradition = tr_prosperity_arcadian_housing_lithoid
 				is_lithoid_empire = yes
 			}
 		}
@@ -827,13 +825,11 @@ district_mining_uncapped = {
 		# Wrong Colony Type
 		modifier = {
 			factor = 0.1
-			NOT = {
-				OR = {
+			NOR = {
 					has_designation = col_mining
 					has_designation = col_rural
 					has_designation = col_rural_gestalt
-				}
-			}
+}
 		}
 	}
 	ai_resource_production = {
@@ -1096,7 +1092,7 @@ district_cheap_mining = {
 		potential = {
 			exists = owner
 			owner = {
-				has_swapped_tradition = tr_prosperity_arcadian_housing_lithoid
+				has_active_tradition = tr_prosperity_arcadian_housing_lithoid
 				is_lithoid_empire = yes
 			}
 		}
@@ -1253,13 +1249,11 @@ district_cheap_mining = {
 		# Wrong Colony Type
 		modifier = {
 			factor = 0.1
-			NOT = {
-				OR = {
+			NOR = {
 					has_designation = col_mining
 					has_designation = col_rural
 					has_designation = col_rural_gestalt
-				}
-			}
+}
 		}
 	}
 	ai_resource_production = {
@@ -1522,7 +1516,7 @@ district_secure_mining = {
 		potential = {
 			exists = owner
 			owner = {
-				has_swapped_tradition = tr_prosperity_arcadian_housing_lithoid
+				has_active_tradition = tr_prosperity_arcadian_housing_lithoid
 				is_lithoid_empire = yes
 			}
 		}
@@ -1680,13 +1674,11 @@ district_secure_mining = {
 		# Wrong Colony Type
 		modifier = {
 			factor = 0.1
-			NOT = {
-				OR = {
+			NOR = {
 					has_designation = col_mining
 					has_designation = col_rural
 					has_designation = col_rural_gestalt
-				}
-			}
+}
 		}
 	}
 	ai_resource_production = {
@@ -1905,7 +1897,7 @@ district_surface_mining = {
 		potential = {
 			exists = owner
 			owner = {
-				has_swapped_tradition = tr_prosperity_arcadian_housing_lithoid
+				has_active_tradition = tr_prosperity_arcadian_housing_lithoid
 				is_lithoid_empire = yes
 			}
 		}
@@ -2062,13 +2054,11 @@ district_surface_mining = {
 		# Wrong Colony Type
 		modifier = {
 			factor = 0.1
-			NOT = {
-				OR = {
+			NOR = {
 					has_designation = col_mining
 					has_designation = col_rural
 					has_designation = col_rural_gestalt
-				}
-			}
+}
 		}
 	}
 	ai_resource_production = {

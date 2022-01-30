@@ -28,11 +28,11 @@ has_unemployed_rulers = {
 }}}
 # Has many workers
 has_many_specialists = {
-	count_pops = { limit = { is_pop_category = worker } count >= 20 }
+	count_owned_pop = { limit = { is_pop_category = worker } count >= 20 }
 }
 # Has many specialists
 has_many_specialists = {
-	count_pops = { limit = { is_pop_category = specialist } count >= 20 }
+	count_owned_pop = { limit = { is_pop_category = specialist } count >= 20 }
 }
 ###########
 # Housing #
@@ -714,7 +714,7 @@ positive_engineering_modifier_large = {
 # Check if there is a eucomenopolis with buildable districts in the empire
 empire_has_eucomenopolis = {
 	owner = {
-		any_planet = {
+		any_system_planet = {
 			is_planet_class = pc_city
 			free_district_slots > 0
 		}

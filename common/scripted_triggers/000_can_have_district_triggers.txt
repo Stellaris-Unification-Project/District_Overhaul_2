@@ -6,16 +6,20 @@ can_have_random_housing_districts = {
 can_have_random_mining_districts = {
 	can_have_random_districts = yes
 	has_district_mining = yes
-	NOT = { is_planet_class = pc_karst }
-	NOT = { is_planet_class = pc_methane }
+	NOR = {
+		is_planet_class = pc_karst
+		is_planet_class = pc_methane
+	}
 	NOT = { is_planet_class = pc_graveyard }
 }
 
 can_have_random_energy_districts = {
 	can_have_random_districts = yes
 	has_district_generator = yes
-	NOT = { is_planet_class = pc_ammonia }
-	NOT = { is_planet_class = pc_graveyard }
+	NOR = {
+		is_planet_class = pc_ammonia
+		is_planet_class = pc_graveyard
+	}
 }
 
 can_have_random_farming_districts = {
@@ -136,10 +140,8 @@ can_have_random_districts = {
 		is_planet_class = pc_underground_icy
 	}
 	# Disabled Planetes from Mods with modifiers
-	NOT = {
-		AND = {
-			has_global_flag = apsr_mod_on
-			has_apsr_modifiers = yes 
-		}
+	NAND = {
+		has_global_flag = apsr_mod_on
+		has_apsr_modifiers = yes 
 	}
 }

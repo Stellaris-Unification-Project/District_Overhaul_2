@@ -296,13 +296,11 @@ district_generator = {
 		# Wrong Colony Type
 		modifier = {
 			factor = 0.1
-			NOT = {
-				OR = {
+			NOR = {
 					has_designation = col_generator
 					has_designation = col_rural
 					has_designation = col_rural_gestalt
-				}
-			}
+}
 		}
 	}
 	ai_resource_production = {
@@ -604,13 +602,11 @@ district_generator_uncapped = {
 		# Wrong Colony Type
 		modifier = {
 			factor = 0.1
-			NOT = {
-				OR = {
+			NOR = {
 					has_designation = col_generator
 					has_designation = col_rural
 					has_designation = col_rural_gestalt
-				}
-			}
+}
 		}
 	}
 	ai_resource_production = {
@@ -914,13 +910,11 @@ district_wind_turbines = {
 		# Wrong Colony Type
 		modifier = {
 			factor = 0.1
-			NOT = {
-				OR = {
+			NOR = {
 					has_designation = col_generator
 					has_designation = col_rural
 					has_designation = col_rural_gestalt
-				}
-			}
+}
 		}
 	}
 	ai_resource_production = {
@@ -1224,13 +1218,11 @@ district_geothermal_generator = {
 		# Wrong Colony Type
 		modifier = {
 			factor = 0.1
-			NOT = {
-				OR = {
+			NOR = {
 					has_designation = col_generator
 					has_designation = col_rural
 					has_designation = col_rural_gestalt
-				}
-			}
+}
 		}
 	}
 	ai_resource_production = {
@@ -1534,13 +1526,11 @@ district_solar_generator = {
 		# Wrong Colony Type
 		modifier = {
 			factor = 0.1
-			NOT = {
-				OR = {
+			NOR = {
 					has_designation = col_generator
 					has_designation = col_rural
 					has_designation = col_rural_gestalt
-				}
-			}
+}
 		}
 	}
 	ai_resource_production = {
@@ -1846,13 +1836,11 @@ district_tidal_generator = {
 		# Wrong Colony Type
 		modifier = {
 			factor = 0.1
-			NOT = {
-				OR = {
+			NOR = {
 					has_designation = col_generator
 					has_designation = col_rural
 					has_designation = col_rural_gestalt
-				}
-			}
+}
 		}
 	}
 	ai_resource_production = {

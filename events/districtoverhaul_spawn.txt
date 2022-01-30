@@ -7,42 +7,44 @@ country_event = {
 	is_triggered_only = yes
 	fire_only_once = yes
 	immediate = {
-		every_planet = {
+		every_system_planet = {
 			limit = { is_special_exotic_farming_pc = yes
 				is_homeworld = no }
 			set_planet_flag = do_exotic_farms
 		}
-		every_planet = {
+		every_system_planet = {
 			limit = { is_planet_class = pc_relic
 				is_homeworld = no }
 			set_planet_flag = do_ascended_housing
 			set_planet_flag = do_archeology
 		}
-		every_planet = {
+		every_system_planet = {
 			limit = {
 				is_planet_class = pc_relic
 				is_homeworld = yes
-				NOT = { has_deposit = d_ancient_structure }
-				NOT = { has_deposit = d_precurser_city }
+				NOR = {
+					has_deposit = d_ancient_structure
+					has_deposit = d_precurser_city
+				}
 			}
 			add_deposit = d_ancient_structure
 			add_deposit = d_precurser_city
 		}
-		every_planet = {
+		every_system_planet = {
 			limit = {
 				is_homeworld = no
 				is_planet_class = pc_crystal
 			}
 			set_planet_flag = do_crystal_mines
 		}
-		every_planet = {
+		every_system_planet = {
 			limit = {
 				is_homeworld = no
 				is_planet_class = pc_floating
 			}
 			set_planet_flag = do_research_complex
 		}
-		every_planet = {
+		every_system_planet = {
 			limit = {
 				is_homeworld = no
 				OR = {
@@ -52,7 +54,7 @@ country_event = {
 			}
 			set_planet_flag = do_undergound_city
 		}
-		every_planet = {
+		every_system_planet = {
 			limit = {
 				is_homeworld = no
 				OR = {
@@ -70,7 +72,7 @@ country_event = {
 # Energy: 3 = 70%, 2 = 50%, 1 = 20% #
 #####################################
 		# Wind Turbines III
-		every_planet = {
+		every_system_planet = {
 			limit = {
 				can_have_random_energy_districts = yes
 				is_homeworld = no
@@ -85,7 +87,7 @@ country_event = {
 			}
 		}
 		# Geothermal Generator III
-		every_planet = {
+		every_system_planet = {
 			limit = {
 				can_have_random_energy_districts = yes
 				is_homeworld = no
@@ -100,7 +102,7 @@ country_event = {
 			}
 		}
 		# Solar Generator III
-		every_planet = {
+		every_system_planet = {
 			limit = {
 				can_have_random_energy_districts = yes
 				is_homeworld = no
@@ -115,7 +117,7 @@ country_event = {
 			}
 		}
 		# Tidal Generator III
-		every_planet = {
+		every_system_planet = {
 			limit = {
 				can_have_random_energy_districts = yes
 				is_homeworld = no
@@ -130,7 +132,7 @@ country_event = {
 			}
 		}
 		# Wind Turbines II
-		every_planet = {
+		every_system_planet = {
 			limit = {
 				can_have_random_energy_districts = yes
 				is_homeworld = no
@@ -145,7 +147,7 @@ country_event = {
 			}
 		}
 		# Geothermal Generator II
-		every_planet = {
+		every_system_planet = {
 			limit = {
 				can_have_random_energy_districts = yes
 				is_homeworld = no
@@ -160,7 +162,7 @@ country_event = {
 			}
 		}
 		# Solar Generator II
-		every_planet = {
+		every_system_planet = {
 			limit = {
 				can_have_random_energy_districts = yes
 				is_homeworld = no
@@ -175,7 +177,7 @@ country_event = {
 			}
 		}
 		# Tidal Generator II
-		every_planet = {
+		every_system_planet = {
 			limit = {
 				can_have_random_energy_districts = yes
 				is_homeworld = no
@@ -190,7 +192,7 @@ country_event = {
 			}
 		}
 		# Wind Turbines I
-		every_planet = {
+		every_system_planet = {
 			limit = {
 				can_have_random_energy_districts = yes
 				is_homeworld = no
@@ -205,7 +207,7 @@ country_event = {
 			}
 		}
 		# Geothermal Generator I
-		every_planet = {
+		every_system_planet = {
 			limit = {
 				can_have_random_energy_districts = yes
 				is_homeworld = no
@@ -220,7 +222,7 @@ country_event = {
 			}
 		}
 		# Solar Generator I
-		every_planet = {
+		every_system_planet = {
 			limit = {
 				can_have_random_energy_districts = yes
 				is_homeworld = no
@@ -235,7 +237,7 @@ country_event = {
 			}
 		}
 		# Tidal Generator I
-		every_planet = {
+		every_system_planet = {
 			limit = {
 				can_have_random_energy_districts = yes
 				is_homeworld = no
@@ -253,7 +255,7 @@ country_event = {
 # Mining: 2 = 70%, 1 = 20% #
 ############################
 		# Cheap Mining II
-		every_planet = {
+		every_system_planet = {
 			limit = {
 				can_have_random_mining_districts = yes
 				is_homeworld = no
@@ -268,7 +270,7 @@ country_event = {
 			}
 		}
 		# Secure Mining II
-		every_planet = {
+		every_system_planet = {
 			limit = {
 				can_have_random_mining_districts = yes
 				is_homeworld = no
@@ -283,7 +285,7 @@ country_event = {
 			}
 		}
 		# Surface Mining II
-		every_planet = {
+		every_system_planet = {
 			limit = {
 				can_have_random_mining_districts = yes
 				is_homeworld = no
@@ -298,7 +300,7 @@ country_event = {
 			}
 		}
 		# Cheap Mining I
-		every_planet = {
+		every_system_planet = {
 			limit = {
 				can_have_random_mining_districts = yes
 				is_homeworld = no
@@ -313,7 +315,7 @@ country_event = {
 			}
 		}
 		# Secure Mining I
-		every_planet = {
+		every_system_planet = {
 			limit = {
 				can_have_random_mining_districts = yes
 				is_homeworld = no
@@ -328,7 +330,7 @@ country_event = {
 			}
 		}
 		# Surface Mining I
-		every_planet = {
+		every_system_planet = {
 			limit = {
 				can_have_random_mining_districts = yes
 				is_homeworld = no
@@ -346,7 +348,7 @@ country_event = {
 # Farming: 3 = 70%, 2 = 50%, 1 = 20% #
 ######################################
 		# Exotic Farms III
-		every_planet = {
+		every_system_planet = {
 			limit = {
 				can_have_random_farming_districts = yes
 				is_homeworld = no
@@ -361,7 +363,7 @@ country_event = {
 			}
 		}
 		# Ocean Farms III
-		every_planet = {
+		every_system_planet = {
 			limit = {
 				can_have_random_farming_districts = yes
 				is_homeworld = no
@@ -376,7 +378,7 @@ country_event = {
 			}
 		}
 		# Nature Farm III
-		every_planet = {
+		every_system_planet = {
 			limit = {
 				can_have_random_farming_districts = yes
 				is_homeworld = no
@@ -391,7 +393,7 @@ country_event = {
 			}
 		}
 		# Hydroponic Bay III
-		every_planet = {
+		every_system_planet = {
 			limit = {
 				can_have_random_farming_districts = yes
 				is_homeworld = no
@@ -406,7 +408,7 @@ country_event = {
 			}
 		}
 		# Exotic Farms II
-		every_planet = {
+		every_system_planet = {
 			limit = {
 				can_have_random_farming_districts = yes
 				is_homeworld = no
@@ -421,7 +423,7 @@ country_event = {
 			}
 		}
 		# Ocean Farms II
-		every_planet = {
+		every_system_planet = {
 			limit = {
 				can_have_random_farming_districts = yes
 				is_homeworld = no
@@ -436,7 +438,7 @@ country_event = {
 			}
 		}
 		# Nature Farm II
-		every_planet = {
+		every_system_planet = {
 			limit = {
 				can_have_random_farming_districts = yes
 				is_homeworld = no
@@ -451,7 +453,7 @@ country_event = {
 			}
 		}
 		# Hydroponic Bay II
-		every_planet = {
+		every_system_planet = {
 			limit = {
 				can_have_random_farming_districts = yes
 				is_homeworld = no
@@ -466,7 +468,7 @@ country_event = {
 			}
 		}
 		# Exotic Farms I
-		every_planet = {
+		every_system_planet = {
 			limit = {
 				can_have_random_farming_districts = yes
 				is_homeworld = no
@@ -481,7 +483,7 @@ country_event = {
 			}
 		}
 		# Ocean Farms I
-		every_planet = {
+		every_system_planet = {
 			limit = {
 				can_have_random_farming_districts = yes
 				is_homeworld = no
@@ -496,7 +498,7 @@ country_event = {
 			}
 		}
 		# Nature Farm I
-		every_planet = {
+		every_system_planet = {
 			limit = {
 				can_have_random_farming_districts = yes
 				is_homeworld = no
@@ -511,7 +513,7 @@ country_event = {
 			}
 		}
 		# Hydroponic Bay I
-		every_planet = {
+		every_system_planet = {
 			limit = {
 				can_have_random_farming_districts = yes
 				is_homeworld = no
@@ -531,7 +533,7 @@ country_event = {
 
 ######################################################################################
 		# Ascended Housing V
-		every_planet = {
+		every_system_planet = {
 			limit = {
 				can_have_random_primary_districts = yes
 				is_homeworld = no
@@ -546,7 +548,7 @@ country_event = {
 			}
 		}
 		# Ascended Housing IV
-		every_planet = {
+		every_system_planet = {
 			limit = {
 				can_have_random_primary_districts = yes
 				is_homeworld = no
@@ -561,7 +563,7 @@ country_event = {
 			}
 		}
 		# Ascended Housing III
-		every_planet = {
+		every_system_planet = {
 			limit = {
 				can_have_random_primary_districts = yes
 				is_homeworld = no
@@ -576,7 +578,7 @@ country_event = {
 			}
 		}
 		# Ascended Housing II
-		every_planet = {
+		every_system_planet = {
 			limit = {
 				can_have_random_primary_districts = yes
 				is_homeworld = no
@@ -591,7 +593,7 @@ country_event = {
 			}
 		}
 		# Ascended Housing I
-		every_planet = {
+		every_system_planet = {
 			limit = {
 				can_have_random_primary_districts = yes
 				is_homeworld = no
@@ -607,7 +609,7 @@ country_event = {
 		}
 ######################################################################################
 		# Ocean Housing V
-		every_planet = {
+		every_system_planet = {
 			limit = {
 				can_have_random_primary_districts = yes
 				is_homeworld = no
@@ -623,7 +625,7 @@ country_event = {
 		}
 		# Ocean Housing IV (Doesn't Exist)
 		# Ocean Housing III
-		every_planet = {
+		every_system_planet = {
 			limit = {
 				can_have_random_primary_districts = yes
 				is_homeworld = no
@@ -639,7 +641,7 @@ country_event = {
 		}
 		# Ocean Housing II (Doesn't Exist)
 		# Ocean Housing I
-		every_planet = {
+		every_system_planet = {
 			limit = {
 				can_have_random_primary_districts = yes
 				is_homeworld = no
@@ -656,7 +658,7 @@ country_event = {
 ######################################################################################
 		# Chemistry Industry V (Doesn't Exist)
 		# Chemistry Industry IV
-		every_planet = {
+		every_system_planet = {
 			limit = {
 				can_have_random_primary_districts = yes
 				is_homeworld = no
@@ -675,7 +677,7 @@ country_event = {
 		}
 		# Chemistry Industry III (Doesn't Exist)
 		# Chemistry Industry II
-		every_planet = {
+		every_system_planet = {
 			limit = {
 				can_have_random_primary_districts = yes
 				is_homeworld = no
@@ -694,7 +696,7 @@ country_event = {
 			}
 		}
 		# Chemistry Industry I
-		every_planet = {
+		every_system_planet = {
 			limit = {
 				can_have_random_primary_districts = yes
 				is_homeworld = no
@@ -715,7 +717,7 @@ country_event = {
 ######################################################################################
 		# Gas Refinery V (Doesn't Exist)
 		# Gas Refinery IV
-		every_planet = {
+		every_system_planet = {
 			limit = {
 				can_have_random_primary_districts = yes
 				is_homeworld = no
@@ -734,7 +736,7 @@ country_event = {
 		}
 		# Gas Refinery III (Doesn't Exist)
 		# Gas Refinery II
-		every_planet = {
+		every_system_planet = {
 			limit = {
 				can_have_random_primary_districts = yes
 				is_homeworld = no
@@ -753,7 +755,7 @@ country_event = {
 			}
 		}
 		# Gas Refinery I
-		every_planet = {
+		every_system_planet = {
 			limit = {
 				can_have_random_primary_districts = yes
 				is_homeworld = no
@@ -774,7 +776,7 @@ country_event = {
 ######################################################################################
 		# Crystal Mines V (Doesn't Exist)
 		# Crystal Mines IV
-		every_planet = {
+		every_system_planet = {
 			limit = {
 				can_have_random_primary_districts = yes
 				is_homeworld = no
@@ -790,7 +792,7 @@ country_event = {
 		}
 		# Crystal Mines III (Doesn't Exist)
 		# Crystal Mines II
-		every_planet = {
+		every_system_planet = {
 			limit = {
 				can_have_random_primary_districts = yes
 				is_homeworld = no
@@ -805,7 +807,7 @@ country_event = {
 			}
 		}
 		# Crystal Mines I
-		every_planet = {
+		every_system_planet = {
 			limit = {
 				can_have_random_primary_districts = yes
 				is_homeworld = no
@@ -822,7 +824,7 @@ country_event = {
 ######################################################################################
 		# Nature Reserve V (Doesn't Exist)
 		# Nature Reserve IV
-		every_planet = {
+		every_system_planet = {
 			limit = {
 				can_have_random_primary_districts = yes
 				is_homeworld = no
@@ -838,7 +840,7 @@ country_event = {
 		}
 		# Nature Reserve III (Doesn't Exist)
 		# Nature Reserve II
-		every_planet = {
+		every_system_planet = {
 			limit = {
 				can_have_random_primary_districts = yes
 				is_homeworld = no
@@ -853,7 +855,7 @@ country_event = {
 			}
 		}
 		# Nature Reserve I
-		every_planet = {
+		every_system_planet = {
 			limit = {
 				can_have_random_primary_districts = yes
 				is_homeworld = no
@@ -869,7 +871,7 @@ country_event = {
 		}
 ######################################################################################
 		# Research Complex V
-		every_planet = {
+		every_system_planet = {
 			limit = {
 				can_have_random_primary_districts = yes
 				is_homeworld = no
@@ -884,7 +886,7 @@ country_event = {
 			}
 		}
 		# Research Complex IV
-		every_planet = {
+		every_system_planet = {
 			limit = {
 				can_have_random_primary_districts = yes
 				is_homeworld = no
@@ -899,7 +901,7 @@ country_event = {
 			}
 		}
 		# Research Complex III
-		every_planet = {
+		every_system_planet = {
 			limit = {
 				can_have_random_primary_districts = yes
 				is_homeworld = no
@@ -914,7 +916,7 @@ country_event = {
 			}
 		}
 		# Research Complex II
-		every_planet = {
+		every_system_planet = {
 			limit = {
 				can_have_random_primary_districts = yes
 				is_homeworld = no
@@ -929,7 +931,7 @@ country_event = {
 			}
 		}
 		# Research Complex I
-		every_planet = {
+		every_system_planet = {
 			limit = {
 				can_have_random_primary_districts = yes
 				is_homeworld = no
@@ -945,7 +947,7 @@ country_event = {
 		}
 ######################################################################################
 		# Assembly V
-		every_planet = {
+		every_system_planet = {
 			limit = {
 				can_have_random_primary_districts = yes
 				is_homeworld = no
@@ -960,7 +962,7 @@ country_event = {
 			}
 		}
 		# Assembly IV
-		every_planet = {
+		every_system_planet = {
 			limit = {
 				can_have_random_primary_districts = yes
 				is_homeworld = no
@@ -975,7 +977,7 @@ country_event = {
 			}
 		}
 		# Assembly III
-		every_planet = {
+		every_system_planet = {
 			limit = {
 				can_have_random_primary_districts = yes
 				is_homeworld = no
@@ -990,7 +992,7 @@ country_event = {
 			}
 		}
 		# Assembly II
-		every_planet = {
+		every_system_planet = {
 			limit = {
 				can_have_random_primary_districts = yes
 				is_homeworld = no
@@ -1005,7 +1007,7 @@ country_event = {
 			}
 		}
 		# Assembly I
-		every_planet = {
+		every_system_planet = {
 			limit = {
 				can_have_random_primary_districts = yes
 				is_homeworld = no
@@ -1021,7 +1023,7 @@ country_event = {
 		}
 ######################################################################################
 		# Tourism V
-		every_planet = {
+		every_system_planet = {
 			limit = {
 				can_have_random_primary_districts = yes
 				is_homeworld = no
@@ -1036,7 +1038,7 @@ country_event = {
 			}
 		}
 		# Tourism IV
-		every_planet = {
+		every_system_planet = {
 			limit = {
 				can_have_random_primary_districts = yes
 				is_homeworld = no
@@ -1051,7 +1053,7 @@ country_event = {
 			}
 		}
 		# Tourism III
-		every_planet = {
+		every_system_planet = {
 			limit = {
 				can_have_random_primary_districts = yes
 				is_homeworld = no
@@ -1066,7 +1068,7 @@ country_event = {
 			}
 		}
 		# Tourism II
-		every_planet = {
+		every_system_planet = {
 			limit = {
 				can_have_random_primary_districts = yes
 				is_homeworld = no
@@ -1081,7 +1083,7 @@ country_event = {
 			}
 		}
 		# Tourism I
-		every_planet = {
+		every_system_planet = {
 			limit = {
 				can_have_random_primary_districts = yes
 				is_homeworld = no
@@ -1098,7 +1100,7 @@ country_event = {
 ######################################################################################
 		# Gardens V (Doesn't Exist)
 		# Gardens IV
-		every_planet = {
+		every_system_planet = {
 			limit = {
 				can_have_random_primary_districts = yes
 				is_homeworld = no
@@ -1114,7 +1116,7 @@ country_event = {
 		}
 		# Gardens III (Doesn't Exist)
 		# Gardens II
-		every_planet = {
+		every_system_planet = {
 			limit = {
 				can_have_random_primary_districts = yes
 				is_homeworld = no
@@ -1129,7 +1131,7 @@ country_event = {
 			}
 		}
 		# Gardens I
-		every_planet = {
+		every_system_planet = {
 			limit = {
 				can_have_random_primary_districts = yes
 				is_homeworld = no
@@ -1145,7 +1147,7 @@ country_event = {
 		}
 ######################################################################################
 		# Ecogardens V
-		every_planet = {
+		every_system_planet = {
 			limit = {
 				can_have_random_primary_districts = yes
 				is_homeworld = no
@@ -1161,7 +1163,7 @@ country_event = {
 			}
 		}
 		# Ecogardens IV
-		every_planet = {
+		every_system_planet = {
 			limit = {
 				can_have_random_primary_districts = yes
 				is_homeworld = no
@@ -1177,7 +1179,7 @@ country_event = {
 			}
 		}
 		# Ecogardens III
-		every_planet = {
+		every_system_planet = {
 			limit = {
 				can_have_random_primary_districts = yes
 				is_homeworld = no
@@ -1193,7 +1195,7 @@ country_event = {
 			}
 		}
 		# Ecogardens II
-		every_planet = {
+		every_system_planet = {
 			limit = {
 				can_have_random_primary_districts = yes
 				is_homeworld = no
@@ -1209,7 +1211,7 @@ country_event = {
 			}
 		}
 		# Ecogardens I
-		every_planet = {
+		every_system_planet = {
 			limit = {
 				can_have_random_primary_districts = yes
 				is_homeworld = no
@@ -1226,7 +1228,7 @@ country_event = {
 		}
 ######################################################################################
 		# Archeology V
-		every_planet = {
+		every_system_planet = {
 			limit = {
 				can_have_random_primary_districts = yes
 				is_homeworld = no
@@ -1241,7 +1243,7 @@ country_event = {
 			}
 		}
 		# Archeology IV
-		every_planet = {
+		every_system_planet = {
 			limit = {
 				can_have_random_primary_districts = yes
 				is_homeworld = no
@@ -1256,7 +1258,7 @@ country_event = {
 			}
 		}
 		# Archeology III
-		every_planet = {
+		every_system_planet = {
 			limit = {
 				can_have_random_primary_districts = yes
 				is_homeworld = no
@@ -1271,7 +1273,7 @@ country_event = {
 			}
 		}
 		# Archeology II
-		every_planet = {
+		every_system_planet = {
 			limit = {
 				can_have_random_primary_districts = yes
 				is_homeworld = no
@@ -1286,7 +1288,7 @@ country_event = {
 			}
 		}
 		# Archeology I
-		every_planet = {
+		every_system_planet = {
 			limit = {
 				can_have_random_primary_districts = yes
 				is_homeworld = no
@@ -1303,7 +1305,7 @@ country_event = {
 ##################
 # Deposit System #
 ##################
-		every_planet = {
+		every_system_planet = {
 			limit = {
 				can_have_random_districts = yes
 				is_homeworld = no
@@ -1311,7 +1313,7 @@ country_event = {
 			do_spawn_deposits = yes
 			do_remove_all_planetary_deposits = yes
 		}
-		every_planet = {
+		every_system_planet = {
 			limit = {
 				can_have_random_districts = yes
 				is_homeworld = yes
@@ -1327,7 +1329,7 @@ country_event = {
 	is_triggered_only = yes
 	fire_only_once = yes
 	immediate = {
-		every_planet = {
+		every_system_planet = {
 			limit = {
 				can_have_random_districts = yes
 				is_homeworld = no

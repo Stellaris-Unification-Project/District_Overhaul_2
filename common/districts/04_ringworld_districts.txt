@@ -81,7 +81,7 @@ district_rw_city = {
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
-			owner = { has_non_swapped_tradition = tr_prosperity_public_works }
+			owner = { has_active_tradition = tr_prosperity_public_works }
 		}
 		modifier = {
 			planet_housing_add = 10
@@ -116,7 +116,7 @@ district_rw_city = {
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
-			owner = { has_non_swapped_tradition = tr_prosperity_interstellar_franchising }
+			owner = { has_active_tradition = tr_prosperity_interstellar_franchising }
 		}
 		modifier = {
 			job_clerk_add = 10
@@ -243,7 +243,7 @@ district_rw_hive = {
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
-			owner = { has_swapped_tradition = tr_prosperity_extended_hives }
+			owner = { has_active_tradition = tr_prosperity_extended_hives }
 		}
 		modifier = {
 			planet_housing_add = 10
@@ -340,7 +340,7 @@ district_rw_nexus = {
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
-			owner = { has_swapped_tradition = tr_prosperity_optimized_nexus }
+			owner = { has_active_tradition = tr_prosperity_optimized_nexus }
 		}
 		modifier = {
 			planet_housing_add = 10
@@ -947,7 +947,7 @@ district_rw_farming = {
 		potential = {
 			exists = owner
 			owner = {
-				has_swapped_tradition = tr_prosperity_arcadian_housing
+				has_active_tradition = tr_prosperity_arcadian_housing
 				is_lithoid_empire = no
 			}
 		}

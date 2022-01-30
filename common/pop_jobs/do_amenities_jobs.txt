@@ -168,9 +168,10 @@ do_archaeologist_drone = {
 		is_being_assimilated = no
 	}
 
+	possible_precalc = can_fill_drone_job
+
 	possible = {
-		drone_job_check_trigger = yes
-	}
+		}
 
 	resources = {
 		category = planet_researchers

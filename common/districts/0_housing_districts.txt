@@ -179,7 +179,7 @@ district_suburban_city = {
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
-			owner = { has_non_swapped_tradition = tr_prosperity_public_works }
+			owner = { has_active_tradition = tr_prosperity_public_works }
 		}
 		modifier = { planet_housing_add = 1 }
 	}
@@ -187,7 +187,7 @@ district_suburban_city = {
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
-			owner = { has_non_swapped_tradition = tr_prosperity_interstellar_franchising }
+			owner = { has_active_tradition = tr_prosperity_interstellar_franchising }
 		}
 		modifier = { job_clerk_add = 1 }
 	}
@@ -222,7 +222,7 @@ district_suburban_city = {
 	triggered_desc = {
 		trigger = {
 			exists = owner
-			owner = { has_non_swapped_tradition = tr_prosperity_interstellar_franchising }
+			owner = { has_active_tradition = tr_prosperity_interstellar_franchising }
 		}
 		text = job_clerk_effect_desc
 	}
@@ -428,7 +428,7 @@ district_city = {
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
-			owner = { has_non_swapped_tradition = tr_prosperity_public_works }
+			owner = { has_active_tradition = tr_prosperity_public_works }
 		}
 		modifier = { planet_housing_add = 1 }
 	}
@@ -436,7 +436,7 @@ district_city = {
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
-			owner = { has_non_swapped_tradition = tr_prosperity_interstellar_franchising }
+			owner = { has_active_tradition = tr_prosperity_interstellar_franchising }
 		}
 		modifier = { job_clerk_add = 1 }
 	}
@@ -478,7 +478,7 @@ district_city = {
 	#triggered_desc = {
 	#	trigger = {
 	#		exists = owner
-	#		owner = { has_non_swapped_tradition = tr_prosperity_interstellar_franchising }
+	#		owner = { has_active_tradition = tr_prosperity_interstellar_franchising }
 	#	}
 	#	text = job_clerk_effect_desc
 	#}
@@ -690,7 +690,7 @@ district_hive = {
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
-			owner = { has_swapped_tradition = tr_prosperity_extended_hives }
+			owner = { has_active_tradition = tr_prosperity_extended_hives }
 		}
 		modifier = { planet_housing_add = 1 }
 	}
@@ -867,7 +867,7 @@ district_nexus = {
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
-			owner = { has_swapped_tradition = tr_prosperity_optimized_nexus }
+			owner = { has_active_tradition = tr_prosperity_optimized_nexus }
 		}
 		modifier = { planet_housing_add = 1 }
 	}
@@ -965,7 +965,7 @@ district_shelters = {
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
-			owner = { has_non_swapped_tradition = tr_prosperity_public_works }
+			owner = { has_active_tradition = tr_prosperity_public_works }
 		}
 		modifier = { planet_housing_add = 1 }
 	}
@@ -973,7 +973,7 @@ district_shelters = {
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
-			owner = { has_non_swapped_tradition = tr_prosperity_interstellar_franchising }
+			owner = { has_active_tradition = tr_prosperity_interstellar_franchising }
 		}
 		modifier = { job_clerk_add = 1 }
 	}
@@ -981,7 +981,7 @@ district_shelters = {
 	triggered_desc = {
 		trigger = {
 			exists = owner
-			owner = { has_non_swapped_tradition = tr_prosperity_interstellar_franchising }
+			owner = { has_active_tradition = tr_prosperity_interstellar_franchising }
 		}
 		text = job_clerk_effect_desc
 	}

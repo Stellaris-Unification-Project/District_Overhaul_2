@@ -332,12 +332,10 @@ decision_secondary_local_stores = {
 		}
 		modifier = {
 			factor = 0
-			NOT = { 
-				OR = {
+			NOR = {
 					has_designation = col_capital
 					has_designation = col_city
-				}
-			}
+}
 		}
 	}
 }

@@ -1329,14 +1329,12 @@ has_previous_owner_2 = {
 	}
 }
 has_previous_owner_1 = {
-	NOT = {
-		OR = {
+	NOR = {
 			has_previous_owner_2 = yes
 			has_previous_owner_3 = yes
 			has_previous_owner_4 = yes
 			has_previous_owner_5 = yes
-		}
-	}
+}
 }
 
 ######################################################################################
@@ -1451,14 +1449,12 @@ has_interesting_places_2 = {
 	}
 }
 has_interesting_places_1 = {
-	NOT = {
-		OR = {
+	NOR = {
 			has_interesting_places_2 = yes
 			has_interesting_places_3 = yes
 			has_interesting_places_4 = yes
 			has_interesting_places_5 = yes
-		}
-	}
+}
 	NOT = {
 		OR = {
 			# Planet Classes
@@ -1603,13 +1599,11 @@ has_anomaly_2 = {
 	}
 }
 has_anomaly_1 = {
-	NOT = {
-		OR = {
+	NOR = {
 			has_anomaly_2 = yes
 			has_anomaly_3 = yes
 			has_anomaly_4 = yes
 			has_anomaly_5 = yes
-		}
-	}
+}
 }
 

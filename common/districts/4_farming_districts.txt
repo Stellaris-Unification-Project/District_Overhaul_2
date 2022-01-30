@@ -197,7 +197,7 @@ district_farming = {
 		potential = {
 			exists = owner
 			owner = {
-				has_swapped_tradition = tr_prosperity_arcadian_housing
+				has_active_tradition = tr_prosperity_arcadian_housing
 				is_lithoid_empire = no
 			}
 		}
@@ -344,13 +344,11 @@ district_farming = {
 		# Wrong Colony Type
 		modifier = {
 			factor = 0.1
-			NOT = {
-				OR = {
+			NOR = {
 					has_designation = farming
 					has_designation = col_rural
 					has_designation = col_rural_gestalt
-				}
-			}
+}
 		}
 	}
 	ai_resource_production = {
@@ -561,7 +559,7 @@ district_farming_uncapped = {
 		potential = {
 			exists = owner
 			owner = {
-				has_swapped_tradition = tr_prosperity_arcadian_housing
+				has_active_tradition = tr_prosperity_arcadian_housing
 				is_lithoid_empire = no
 			}
 		}
@@ -708,13 +706,11 @@ district_farming_uncapped = {
 		# Wrong Colony Type
 		modifier = {
 			factor = 0.1
-			NOT = {
-				OR = {
+			NOR = {
 					has_designation = farming
 					has_designation = col_rural
 					has_designation = col_rural_gestalt
-				}
-			}
+}
 		}
 	}
 	ai_resource_production = {
@@ -926,7 +922,7 @@ district_hydroponic_bay = {
 		potential = {
 			exists = owner
 			owner = {
-				has_swapped_tradition = tr_prosperity_arcadian_housing
+				has_active_tradition = tr_prosperity_arcadian_housing
 				is_lithoid_empire = no
 			}
 		}
@@ -1073,13 +1069,11 @@ district_hydroponic_bay = {
 		# Wrong Colony Type
 		modifier = {
 			factor = 0.1
-			NOT = {
-				OR = {
+			NOR = {
 					has_designation = farming
 					has_designation = col_rural
 					has_designation = col_rural_gestalt
-				}
-			}
+}
 		}
 	}
 	ai_resource_production = {
@@ -1255,7 +1249,7 @@ district_nature_farms = {
 		potential = {
 			exists = owner
 			owner = {
-				has_swapped_tradition = tr_prosperity_arcadian_housing
+				has_active_tradition = tr_prosperity_arcadian_housing
 				is_lithoid_empire = no
 			}
 		}
@@ -1402,13 +1396,11 @@ district_nature_farms = {
 		# Wrong Colony Type
 		modifier = {
 			factor = 0.1
-			NOT = {
-				OR = {
+			NOR = {
 					has_designation = farming
 					has_designation = col_rural
 					has_designation = col_rural_gestalt
-				}
-			}
+}
 		}
 	}
 	ai_resource_production = {
@@ -1626,7 +1618,7 @@ district_ocean_farms = {
 		potential = {
 			exists = owner
 			owner = {
-				has_swapped_tradition = tr_prosperity_arcadian_housing
+				has_active_tradition = tr_prosperity_arcadian_housing
 				is_lithoid_empire = no
 			}
 		}
@@ -1773,13 +1765,11 @@ district_ocean_farms = {
 		# Wrong Colony Type
 		modifier = {
 			factor = 0.1
-			NOT = {
-				OR = {
+			NOR = {
 					has_designation = farming
 					has_designation = col_rural
 					has_designation = col_rural_gestalt
-				}
-			}
+}
 		}
 	}
 	ai_resource_production = {
@@ -1991,7 +1981,7 @@ district_efficient_farms = {
 		potential = {
 			exists = owner
 			owner = {
-				has_swapped_tradition = tr_prosperity_arcadian_housing
+				has_active_tradition = tr_prosperity_arcadian_housing
 				is_lithoid_empire = no
 			}
 		}
@@ -2138,13 +2128,11 @@ district_efficient_farms = {
 		# Wrong Colony Type
 		modifier = {
 			factor = 0.1
-			NOT = {
-				OR = {
+			NOR = {
 					has_designation = farming
 					has_designation = col_rural
 					has_designation = col_rural_gestalt
-				}
-			}
+}
 		}
 	}
 	ai_resource_production = {
@@ -2403,7 +2391,7 @@ district_exotic_farms = {
 		potential = {
 			exists = owner
 			owner = {
-				has_swapped_tradition = tr_prosperity_arcadian_housing
+				has_active_tradition = tr_prosperity_arcadian_housing
 				is_lithoid_empire = no
 			}
 		}
