@@ -9,8 +9,8 @@ can_have_random_mining_districts = {
 	NOR = {
 		is_planet_class = pc_karst
 		is_planet_class = pc_methane
+		is_planet_class = pc_graveyard
 	}
-	NOT = { is_planet_class = pc_graveyard }
 }
 
 can_have_random_energy_districts = {
